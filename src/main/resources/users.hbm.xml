@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ <class name="com.hibernate.first.demo.Users">
+ <id name="id">
+ <generator class="identity"></generator>
+ </id>
+ <property name="firstName"></property>
+ <property name="lastName"></property>
+  <property name="marks" not-null="true"></property>
+   <property name="range" not-null="false"></property>
+   <property name="age"></property>
+ </class>
+ </hibernate-mapping>

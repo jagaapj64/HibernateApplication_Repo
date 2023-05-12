@@ -1,0 +1,4 @@
+# Created at 2023-04-04T15:04:15.039
+Boot Manifest-JAR contains absolute paths in classpath 'E:\junit_workspace\first.demo.hibernate.application\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

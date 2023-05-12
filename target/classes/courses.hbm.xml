@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hibernate.first.demo.Courses">
+		<id name="cid"></id>
+		<property name="cname"></property>
+		<property name="fee"></property>
+		<set name="faculties" table="facultycourse">
+			<key column="cid" />
+			<many-to-many class="com.hibernate.first.demo.Faculty"
+				column="fid"></many-to-many>
+		</set>
+
+	</class>
+</hibernate-mapping>
